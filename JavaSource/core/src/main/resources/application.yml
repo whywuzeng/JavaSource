@@ -1,14 +1,18 @@
 spring:
   profiles:
     active: dev
-  redis:
-    host: localhost
-    port: 6379
+#  redis:
+#    host: 192.168.128.129
+#    port: 6379
   datasource:
-    url: jdbc:h2:file:~/mydb.h2
-    username: sa
-    password: sa
-    driverClassName: org.h2.Driver
+#    url: jdbc:h2:file:~/mydb.h2
+#    username: sa
+#    password: sa
+#    driverClassName: org.h2.Driver
+    url: jdbc:mysql://94.191.109.74:3306/qw_db?user=root&password=123456&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     # 下面为连接池的补充设置，应用到上面所有数据源中
     # 初始化大小，最小，最大
@@ -35,7 +39,7 @@ spring:
     # 合并多个DruidDataSource的监控数据
     #useGlobalDataSourceStat: true
   jpa:
-    database: h2
+    database: MYSQL
     show-sql: true
     hibernate:
       ddl-auto: update
@@ -59,4 +63,4 @@ spring:
             enable: true
             required: true
 server:
-  port: 8080
+  port: 8081

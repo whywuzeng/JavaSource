@@ -1,15 +1,10 @@
 package cn.xiaowenjie.springconfigs;
 
-import cn.xiaowenjie.tool.PasswordUtil;
-import com.google.common.collect.Maps;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
-import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
-import org.apache.shiro.web.filter.authz.PermissionsAuthorizationFilter;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.SimpleCookie;
@@ -19,13 +14,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.stream.Collectors;
+import cn.xiaowenjie.tool.PasswordUtil;
+import lombok.extern.slf4j.Slf4j;
 
 @Configuration
 @Slf4j
@@ -126,22 +116,22 @@ public class ShiroConfig {
 
         return hashedCredentialsMatcher;
     }
-//
-//    @Bean("lifecycleBeanPostProcessor")
-//    public LifecycleBeanPostProcessor lifecycleBeanPostProcessor(){
-//        return new LifecycleBeanPostProcessor();
-//    }
-//
-//    @Bean
-//    @DependsOn("lifecycleBeanPostProcessor")
-//    public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator(){
-//        DefaultAdvisorAutoProxyCreator creator = new DefaultAdvisorAutoProxyCreator();
-//
-//        // 强制使用cglib
-//        creator.setProxyTargetClass(true);
-//
-//        return  creator;
-//    }
+
+    @Bean("lifecycleBeanPostProcessor")
+    public LifecycleBeanPostProcessor lifecycleBeanPostProcessor(){
+        return new LifecycleBeanPostProcessor();
+    }
+
+    @Bean
+    @DependsOn("lifecycleBeanPostProcessor")
+    public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator(){
+        DefaultAdvisorAutoProxyCreator creator = new DefaultAdvisorAutoProxyCreator();
+
+        // 强制使用cglib
+        creator.setProxyTargetClass(true);
+
+        return  creator;
+    }
 
     /**
      * 开启shiro aop注解支持.

@@ -1,7 +1,7 @@
 package cn.xiaowenjie.SpringbootCodeTemplate;
 
-import cn.xiaowenjie.SpringbootCodeTemplateApplication;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import cn.xiaowenjie.SpringbootCodeTemplateApplication;
 import cn.xiaowenjie.tool.MailTool;
 
 /**
@@ -20,6 +21,7 @@ import cn.xiaowenjie.tool.MailTool;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SpringbootCodeTemplateApplication.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@Ignore
 public class MailTest {
 
   @Autowired

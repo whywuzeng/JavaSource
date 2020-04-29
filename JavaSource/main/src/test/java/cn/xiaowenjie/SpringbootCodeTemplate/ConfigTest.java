@@ -1,12 +1,8 @@
 package cn.xiaowenjie.SpringbootCodeTemplate;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
-import java.util.Collection;
-
 import org.junit.Before;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -16,18 +12,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Collection;
+
 import cn.xiaowenjie.SpringbootCodeTemplateApplication;
 import cn.xiaowenjie.beans.Config;
-import cn.xiaowenjie.common.rbac.User;
-import cn.xiaowenjie.common.consts.Roles;
-import cn.xiaowenjie.common.exceptions.CheckException;
-import cn.xiaowenjie.common.utils.UserUtil;
 import cn.xiaowenjie.common.daos.UserDao;
+import cn.xiaowenjie.common.exceptions.CheckException;
+import cn.xiaowenjie.common.rbac.User;
+import cn.xiaowenjie.common.utils.UserUtil;
 import cn.xiaowenjie.services.ConfigService;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SpringbootCodeTemplateApplication.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@Ignore
 public class ConfigTest {
 
   @Autowired

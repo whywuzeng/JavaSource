@@ -20,7 +20,7 @@ public class MailControlller {
 	 */
 	@GetMapping("/test")
 	public ResultBean<String> test() {
-		String to = "1304471323@qq.com";
+		String to = "jiushiqiangone@sina.com";
 		mailTool.send("测试发送标题", "这是正文\n没有html", to);
 		return new ResultBean<String>("send mail to: " + to);
 	}

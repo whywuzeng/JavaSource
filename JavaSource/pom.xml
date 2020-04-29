@@ -11,10 +11,11 @@
 
     <modules>
         <module>core</module>
-        <module>favorite</module>
+<!--        <module>favorite</module>-->
         <module>main</module>
-        <module>chart</module>
-        <module>blog</module>
+<!--        <module>chart</module>-->
+<!--        <module>blog</module>-->
+        <module>qwedu</module>
     </modules>
 
     <parent>
@@ -149,8 +150,13 @@
             <version>1.1.10</version>
         </dependency>
 
-    </dependencies>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.10</version>
+        </dependency>
 
+    </dependencies>
 
     <build>
         <plugins>
@@ -177,5 +183,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
