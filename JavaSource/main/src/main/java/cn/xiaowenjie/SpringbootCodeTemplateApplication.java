@@ -1,11 +1,15 @@
 package cn.xiaowenjie;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ResourceBundleMessageSource;
+
+import javax.servlet.MultipartConfigElement;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
@@ -29,4 +33,15 @@ public class SpringbootCodeTemplateApplication {
 		messageSource.setDefaultEncoding("UTF-8");
 		return messageSource;
 	}
+
+	@Value("${file.uploadFolder}")
+	private String uploadFolder;
+
+	@Bean
+	MultipartConfigElement multipartConfigElement() {
+		MultipartConfigFactory factory = new MultipartConfigFactory();
+		factory.setLocation(uploadFolder);
+		return factory.createMultipartConfig();
+	}
+
 }

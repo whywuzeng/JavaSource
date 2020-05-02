@@ -7,6 +7,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 import cn.xiaowenjie.beans.AdvertManager;
@@ -17,6 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 import next.framework.page.PageResult;
 
 import static cn.xiaowenjie.common.utils.CheckUtil.check;
+import static cn.xiaowenjie.common.utils.CheckUtil.notEmpty;
 import static cn.xiaowenjie.common.utils.CheckUtil.notNull;
 
 /**
@@ -121,4 +123,12 @@ public class AdvertManagerService {
         return true;
     }
 
+    public Long update(AdvertManager manager) {
+        check(manager != null, "advertManager.error", manager.toString());
+        notEmpty(manager.getPlatform(),"advertManagerForm paltform not null or empty",manager.getPlatform());
+        notEmpty(manager.getPosition(),"advertManagerForm position not null or empty",manager.getPosition());
+        AdvertManager save = dao.save(manager);
+        save.setUpdateTime(new Date());
+        return save.getId();
+    }
 }

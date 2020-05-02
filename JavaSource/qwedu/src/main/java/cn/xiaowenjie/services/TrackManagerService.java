@@ -1,16 +1,24 @@
 package cn.xiaowenjie.services;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 import cn.xiaowenjie.beans.Trackmanager;
+import cn.xiaowenjie.boss.form.TrackmanagerForm;
 import cn.xiaowenjie.daos.TrackManagerDao;
+import cn.xiaowenjie.helper.PageTransformer;
 import lombok.extern.slf4j.Slf4j;
+import next.framework.page.PageResult;
 
 import static cn.xiaowenjie.common.utils.CheckUtil.check;
+import static cn.xiaowenjie.common.utils.CheckUtil.notEmpty;
 import static cn.xiaowenjie.common.utils.CheckUtil.notNull;
 
 /**
@@ -25,15 +33,15 @@ public class TrackManagerService {
     @Autowired
     TrackManagerDao dao;
 
-    public Collection<Trackmanager> getAll() {
+    public PageResult<Trackmanager> getAll(int pageNo, int pageSize) {
         // 校验通过后打印重要的日志
         log.info("getAll start ...");
+        Page<Trackmanager> page = PageHelper.startPage(pageNo, pageSize);
 
         List<Trackmanager> data = (List<Trackmanager>) dao.findAll();
-
         log.info("getAll end, data size:" + data.size());
-
-        return data;
+        PageInfo<Trackmanager> pageInfo = new PageInfo<>(data);
+        return PageTransformer.transform(pageInfo);
     }
 
     /**
@@ -42,7 +50,7 @@ public class TrackManagerService {
      * @param Trackmanager
      * @return
      */
-    public long add(Trackmanager Trackmanager) {
+    public long add(TrackmanagerForm Trackmanager) {
         // 参数校验
         notNull(Trackmanager);
 
@@ -53,6 +61,13 @@ public class TrackManagerService {
         log.info("add Trackmanager:" + Trackmanager);
 
 //        long userId = UserUtil.getUserId();
+        Trackmanager trackmanager = new Trackmanager();
+        trackmanager.setId(0);
+        trackmanager.setParentName(Trackmanager.getParentName());
+        trackmanager.setPhoneNum(Trackmanager.getPhoneNum());
+        trackmanager.setGrade(Trackmanager.getGrade());
+        trackmanager.setCreateTime(new Date());
+
 
         // 校验重复
 //        Trackmanager favoriteNew = dao.findByUserIdAndObjTypeAndObjId(userId, Trackmanager.getObjType(), Trackmanager.getObjId());
@@ -63,7 +78,7 @@ public class TrackManagerService {
             // 设置用户id
 //            Trackmanager.setUserId(userId);
 
-            favoriteNew = dao.save(Trackmanager);
+            favoriteNew = dao.save(trackmanager);
 
             // 修改操作需要打印操作结果
             log.info("add Trackmanager success, id:" + favoriteNew.getId());
@@ -110,4 +125,12 @@ public class TrackManagerService {
         return true;
     }
 
+    public Long update(Trackmanager manager) {
+        check(manager != null, "advertManager.error", manager.toString());
+        notEmpty(manager.getGrade(),"Trackmanager Grade not null or empty",manager.getGrade());
+        notEmpty(manager.getParentName(),"Trackmanager ParentName not null or empty",manager.getParentName());
+        Trackmanager save = dao.save(manager);
+        save.setUpdateTime(new Date());
+        return save.getId();
+    }
 }

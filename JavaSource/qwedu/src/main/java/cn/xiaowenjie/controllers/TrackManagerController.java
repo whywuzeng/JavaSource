@@ -2,21 +2,21 @@ package cn.xiaowenjie.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collection;
-
 import javax.validation.Valid;
 
+import cn.xiaowenjie.beans.PageObject;
 import cn.xiaowenjie.beans.Trackmanager;
+import cn.xiaowenjie.boss.form.TrackmanagerForm;
 import cn.xiaowenjie.common.beans.ResultBean;
 import cn.xiaowenjie.services.TrackManagerService;
 import io.swagger.annotations.Api;
+import next.framework.page.PageResult;
 
 /**
  * Created by Administrator on 2020/4/10.
@@ -25,7 +25,7 @@ import io.swagger.annotations.Api;
  * <p>
  * cn.xiaowenjie.controllers
  */
-@Api(description = "班级管理api")
+@Api(description = "线索管理api")
 @RequestMapping("/track/manager")
 @RestController
 @CrossOrigin
@@ -34,9 +34,9 @@ public class TrackManagerController {
     @Autowired
     private TrackManagerService trackManagerService;
 
-    @GetMapping("/all")
-    public ResultBean<Collection<Trackmanager>> getAll() {
-        return new ResultBean<Collection<Trackmanager>>(trackManagerService.getAll());
+    @PostMapping("/all")
+    public ResultBean<PageResult<Trackmanager>> getAll(@RequestBody PageObject pageObject) {
+        return new ResultBean<PageResult<Trackmanager>>(trackManagerService.getAll(pageObject.getPageNo(),pageObject.getPageSize()));
     }
 
     /**
@@ -48,7 +48,7 @@ public class TrackManagerController {
      * @return
      */
     @PostMapping("/add")
-    public ResultBean<Long> add(@RequestBody @Valid Trackmanager favorite) {
+    public ResultBean<Long> add(@RequestBody @Valid TrackmanagerForm favorite) {
         return new ResultBean<Long>(trackManagerService.add(favorite));
     }
 
@@ -57,4 +57,8 @@ public class TrackManagerController {
         return new ResultBean<Boolean>(trackManagerService.delete(id));
     }
 
+    @PostMapping("/update")
+    public ResultBean<Long> update(@RequestBody @Valid Trackmanager advert) {
+        return new ResultBean<Long>(trackManagerService.update(advert));
+    }
 }

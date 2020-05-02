@@ -57,4 +57,9 @@ public class AdvertManagerController {
         return new ResultBean<Boolean>(advertManagerService.delete(id));
     }
 
+    @PostMapping("/update")
+    public ResultBean<Long> update(@RequestBody @Valid AdvertManager manager) {
+        return new ResultBean<Long>(advertManagerService.update(manager));
+    }
+
 }

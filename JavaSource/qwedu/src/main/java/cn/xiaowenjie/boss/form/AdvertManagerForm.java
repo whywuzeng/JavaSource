@@ -28,4 +28,12 @@ public class AdvertManagerForm {
     public void setPosition(String position) {
         this.position = position;
     }
+
+    @Override
+    public String toString() {
+        return "AdvertManagerForm{" +
+                "platform='" + platform + '\'' +
+                ", position='" + position + '\'' +
+                '}';
+    }
 }

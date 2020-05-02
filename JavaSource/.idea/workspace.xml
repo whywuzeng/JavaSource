@@ -3,26 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="bbb20273-986a-48ca-a724-e0efd05d7360" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/CreateTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/CreateTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/controllers/CacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/controllers/CacheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/controllers/MailControlller.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/controllers/MailControlller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/SpringbootCodeTemplateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/SpringbootCodeTemplateApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/jpa/JMSObjectComsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/jpa/JMSObjectComsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/jpa/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/jpa/JPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/DruidStatViewServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/DruidStatViewServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/test/java/cn/xiaowenjie/SpringbootCodeTemplate/ConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/test/java/cn/xiaowenjie/SpringbootCodeTemplate/ConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/test/java/cn/xiaowenjie/SpringbootCodeTemplate/MailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/test/java/cn/xiaowenjie/SpringbootCodeTemplate/MailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebProject/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WebProject/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebProject/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WebProject/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Trackmanager.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Trackmanager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/AdvertManagerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/AdvertManagerForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/SchoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/SchoolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TrackManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TrackManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/SchoolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TrackManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TrackManagerService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,10 +59,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertManagerController.java">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="51" column="60" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="60" />
+            <state relative-caret-position="214">
+              <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="75" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,58 +71,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/AdvertManager.java">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Trackmanager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="314">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/AdvertManagerForm.java">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/School.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="264">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/helper/PageTransformer.java">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+            <state relative-caret-position="154">
+              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/next/platform/framework-api/1.2.1/framework-api-1.2.1.jar!/next/framework/page/PageResult.class">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/SchoolController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="299">
+              <caret line="51" column="53" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qwedu/pom.xml">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/SchoolService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="566">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertManagerService.java">
+        <entry file="file://$PROJECT_DIR$/qwedu/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="65" column="45" lean-forward="true" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="67">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -135,26 +130,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/common/utils/CheckUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="90">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/Page.class">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertManagerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+            <state relative-caret-position="306">
+              <caret line="45" column="51" selection-start-line="36" selection-start-column="7" selection-end-line="45" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java">
+        <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/SchoolForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="264">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,12 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Swagger</find>
-      <find>advert</find>
-      <find>org.springframework.boot</find>
-      <find>spring-boot-maven-plugin</find>
-      <find>favorite</find>
-      <find>org.apache.maven</find>
       <find>Dockerfile</find>
       <find>Skipping docker build</find>
       <find>${project.basedir}</find>
@@ -205,6 +197,12 @@
       <find>Teacher</find>
       <find>pagehelper</find>
       <find>list</find>
+      <find>web</find>
+      <find>captureImagePath</find>
+      <find>uploadFolder</find>
+      <find>d://pics//upload</find>
+      <find>notEmpty</find>
+      <find>next.platform</find>
     </findStrings>
     <replaceStrings>
       <replace>Dao</replace>
@@ -222,14 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main/src/test/java/cn/xiaowenjie/SpringbootCodeTemplate/ConfigTest.java" />
-        <option value="$PROJECT_DIR$/main/src/test/java/cn/xiaowenjie/SpringbootCodeTemplate/MailTest.java" />
-        <option value="$PROJECT_DIR$/main/src/test/java/cn/xiaowenjie/SpringbootCodeTemplate/ModuleTest.java" />
-        <option value="$PROJECT_DIR$/main/pom.xml" />
-        <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/SpringbootCodeTemplateApplication.java" />
-        <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/JMSConfig.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/controllers/MailControlller.java" />
-        <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/MyAuthorizingRealm.java" />
         <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/AdvertManagerDao.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/Advert.java" />
@@ -237,10 +227,8 @@
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Category.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Contentmanager.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Honor.java" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/School.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Schoolpic.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Teacher.java" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Trackmanager.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/AdvertDao.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/CategoryDao.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/CategoryService.java" />
@@ -250,29 +238,39 @@
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/ContentManagerDao.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/HonorService.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/HonorDao.java" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/SchoolService.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/SchoolDao.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TeacherService.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/TeacherDao.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/TrackManagerDao.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/ContentManagerController.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/HonorController.java" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/SchoolController.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TeacherController.java" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TrackManagerService.java" />
         <option value="$PROJECT_DIR$/qwedu/src/test/java/com/test/TrackManagerTest.java" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TrackManagerController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/GlobalCorsConfig.java" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
-        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/PageObject.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/helper/PageTransformer.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/AdvertManagerForm.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertManagerController.java" />
-        <option value="$PROJECT_DIR$/qwedu/pom.xml" />
+        <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/ServerConfig.java" />
+        <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/SpringbootCodeTemplateApplication.java" />
+        <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/MyConfiguration.java" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/AdvertForm.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TrackManagerController.java" />
         <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertManagerService.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TrackManagerService.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/TrackmanagerForm.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Trackmanager.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/SchoolController.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/SchoolService.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/SchoolForm.java" />
+        <option value="$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/School.java" />
+        <option value="$PROJECT_DIR$/qwedu/pom.xml" />
       </list>
     </option>
   </component>
@@ -288,12 +286,50 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="qwedu" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="qwedu" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="qwedu" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="docker" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="springbootcodetemplate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="springbootcodetemplate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springbootcodetemplate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
       </expand>
       <select />
@@ -384,6 +420,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -423,6 +460,25 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -454,6 +510,36 @@
             <path>
               <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+              <item name="springconfigs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
               <item name="qwedu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -495,6 +581,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="qwedu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
@@ -512,13 +609,46 @@
               <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
               <item name="qwedu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+              <item name="boss" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="qwedu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="qwedu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaowenjie" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
+              <item name="qwedu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -700,8 +830,18 @@
       <workItem from="1588087272611" duration="2050000" />
       <workItem from="1588160367475" duration="5115000" />
       <workItem from="1588173481846" duration="1019000" />
-      <workItem from="1588201706883" duration="364000" />
+      <workItem from="1588201706883" duration="495000" />
+      <workItem from="1588304067732" duration="14234000" />
+      <workItem from="1588373601450" duration="19382000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1588202176810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588202176810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -719,7 +859,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133231000" />
+    <option name="totallyTimeSpent" value="166978000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -732,9 +872,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4954955" visible="true" weight="0.3488529" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4954955" visible="true" weight="0.35492578" />
       <window_info id="Structure" order="1" sideWeight="0.5045045" side_tool="true" weight="0.22314675" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -744,20 +883,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Learn" order="8" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49932525" visible="true" weight="0.25762194" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932525" visible="true" weight="0.3887195" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865046" weight="0.35060975" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932525" weight="0.25762194" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932525" visible="true" weight="0.4054878" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4979757" weight="0.26067072" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3277439" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3277439" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013495" side_tool="true" weight="0.41768292" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020243" side_tool="true" weight="0.37195122" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49932525" weight="0.36890244" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.20121951" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3262195" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3277439" />
-      <window_info anchor="bottom" id="Docker" order="14" sideWeight="0.49932525" weight="0.17682926" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.36890244" />
+      <window_info anchor="bottom" id="Docker" order="14" sideWeight="0.49932525" weight="0.7042683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25708503" />
@@ -769,7 +908,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="right" id="Maven" order="11" weight="0.1902834" />
+      <window_info anchor="right" id="Maven" order="11" visible="true" weight="0.4473684" />
     </layout>
     <layout-to-restore>
       <window_info id="Learn" order="0" weight="0.32980332" />
@@ -811,6 +950,50 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -829,14 +1012,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE-sources.jar!/org/springframework/web/method/annotation/AbstractNamedValueMethodArgumentResolver.java</url>
-          <line>90</line>
-          <properties class="org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver" method="resolveArgument">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/controllers/AppController.java</url>
@@ -862,6 +1037,30 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TrackManagerService.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -872,232 +1071,199 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>this.doSingleRealmAuthentication((Realm)realms.iterator().next(), authenticationToken)</expression-string>
+        <expression-string>staticAccessPath.indexOf('*')</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>MessageDigest.isEqual(tokenBytes, accountBytes)</expression-string>
+        <expression-string>staticAccessPath.substring(0,staticAccessPath.indexOf('*'))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>staticAccessPath.substring(0,staticAccessPath.indexOf('*')-1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>staticAccessPath.substring(staticAccessPath.indexOf('*'))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>isResourceUnderLocation(resource, location)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>file.canRead()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ResourceUtils.isFileURL(url)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.getFile().exists()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.doSingleRealmAuthentication((Realm)realms.iterator().next(), authenticationToken)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/HonorDao.java">
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/MyAuthorizingRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state relative-caret-position="-494">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#2759#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/SchoolDao.java">
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/WebMvcConfig.java" />
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/DruidStatFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/TeacherDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
-          <caret line="102" column="24" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/SchoolController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.8.RELEASE/spring-boot-1.5.8.RELEASE.jar!/org/springframework/boot/web/servlet/MultipartConfigFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TeacherController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        <state relative-caret-position="114">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE-sources.jar!/org/springframework/web/servlet/resource/DefaultResourceResolverChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1207#1225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar!/com/mysql/jdbc/ConnectionImpl.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.8.RELEASE/spring-boot-1.5.8.RELEASE-sources.jar!/org/springframework/boot/web/servlet/MultipartConfigFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="407" selection-start-line="407" selection-end-line="407" />
+        <state relative-caret-position="-715">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar!/com/mysql/jdbc/SQLError.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE-sources.jar!/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="256" selection-start-line="256" selection-end-line="256" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.8.RELEASE/spring-data-commons-1.13.8.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/CategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/daos/TrackManagerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="130">
+          <caret line="432" column="41" lean-forward="true" selection-start-line="432" selection-start-column="41" selection-end-line="432" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5691#5692#0" expanded="true" />
+            <element signature="e#5719#5720#0" expanded="true" />
+            <element signature="e#6284#6285#0" expanded="true" />
+            <element signature="e#6320#6321#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/HonorController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE-sources.jar!/org/springframework/web/servlet/resource/DefaultResourceTransformerChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-184">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/SchoolService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework/util/ResourceUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="158">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/SpringbootCodeTemplateApplication.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE-sources.jar!/org/springframework/web/servlet/resource/AbstractResourceResolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/ContentManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="38" column="85" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/ContentManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/test/java/com/test/TrackManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.11/pagehelper-5.1.11.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TrackManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TrackManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="475">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        <state relative-caret-position="1387">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/CreateTestData.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework/core/io/Resource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="437">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/services/ConfigService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework/core/io/AbstractFileResolvingResource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="1387">
+          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/tool/ConfigUtil.java">
+    <entry file="jar://C:/Java/jdk1.8.0_201/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="129">
+          <caret line="564" selection-start-line="564" selection-end-line="564" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.11/pagehelper-5.1.11-sources.jar!/com/github/pagehelper/PageInfo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework/core/io/UrlResource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        <state relative-caret-position="118">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java">
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/springconfigs/MyConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="37" column="91" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="91" />
+        <state relative-caret-position="300">
+          <caret line="28" column="97" lean-forward="true" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1106,205 +1272,250 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Advert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="140">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE-sources.jar!/org/springframework/web/servlet/resource/PathResourceResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/GlobalCorsConfig.java">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="156">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/HonorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="156">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/ContentManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2964">
-          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+        <state relative-caret-position="156">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/annotation/AbstractNamedValueMethodArgumentResolver.class">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="156">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="575" column="18" selection-start-line="575" selection-start-column="18" selection-end-line="575" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Schoolpic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/PageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="156">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE-sources.jar!/org/springframework/web/method/annotation/AbstractNamedValueMethodArgumentResolver.java">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Honor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+        <state relative-caret-position="278">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Contentmanager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2470">
-          <caret line="161" column="38" selection-start-line="161" selection-start-column="38" selection-end-line="161" selection-end-column="38" />
+        <state relative-caret-position="156">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8208">
-          <caret line="524" column="61" selection-start-line="524" selection-start-column="61" selection-end-line="524" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE-sources.jar!/org/springframework/web/method/annotation/RequestParamMethodArgumentResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2622">
-          <caret line="179" selection-start-line="179" selection-end-line="179" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE.jar!/org/springframework/context/expression/StandardBeanExpressionResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1634">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/PageSerializable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/PageInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-          <folding>
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="51" column="60" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/AdvertManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="278">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/AdvertManagerForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="-109">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/helper/PageTransformer.java">
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/AdvertForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/next/platform/framework-api/1.2.1/framework-api-1.2.1.jar!/next/framework/page/PageResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/common/utils/CheckUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/Page.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        <state relative-caret-position="43">
+          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="245">
+          <caret line="210" column="39" lean-forward="true" selection-start-line="210" selection-start-column="39" selection-end-line="210" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertManagerService.java">
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/cn/xiaowenjie/SpringbootCodeTemplateApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="65" column="45" lean-forward="true" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+        <state relative-caret-position="52">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/beans/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/TrackmanagerForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/TrackManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/TrackManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="75" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/Trackmanager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/AdvertManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/xiaowenjie/common/utils/CheckUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/AdvertManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="45" column="51" selection-start-line="36" selection-start-column="7" selection-end-line="45" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/controllers/SchoolController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="51" column="53" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/boss/form/SchoolForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/beans/School.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/src/main/java/cn/xiaowenjie/services/SchoolService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwedu/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>

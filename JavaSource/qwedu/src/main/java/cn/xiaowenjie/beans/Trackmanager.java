@@ -10,6 +10,8 @@ package cn.xiaowenjie.beans;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.math.BigInteger;
+
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 
@@ -23,5 +25,5 @@ public class Trackmanager extends BaseEntity{
 //      parentName  grade   phoneNum
     private String parentName;
     private String grade;
-    private int phoneNum;
+    private BigInteger phoneNum;
 }

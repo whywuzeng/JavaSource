@@ -62,5 +62,17 @@ spring:
           starttls:
             enable: true
             required: true
+  http:
+    multipart:
+      max-request-size: 100Mb
+      max-file-size: 10Mb
 server:
   port: 8081
+#文件上传目录(window是d/e/f盘， linux是/)（注意Linux和Windows上的目录结构不同）
+#file.uploadFolder=/
+file:
+  uploadFolder: d://pics//
+  #静态资源对外暴露的访问路径(访问图片的路径)
+  staticAccessPath: /upload/**
+
+

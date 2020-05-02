@@ -1,7 +1,5 @@
 package cn.xiaowenjie.controllers;
 
-import com.github.pagehelper.PageInfo;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,13 +7,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 import javax.validation.Valid;
 
 import cn.xiaowenjie.beans.Advert;
+import cn.xiaowenjie.beans.PageObject;
+import cn.xiaowenjie.boss.form.AdvertForm;
 import cn.xiaowenjie.common.beans.ResultBean;
 import cn.xiaowenjie.services.AdvertService;
 import io.swagger.annotations.Api;
+import next.framework.page.PageResult;
 
 /**
  * Created by Administrator on 2020/4/10.
@@ -34,8 +38,8 @@ public class AdvertController {
     private AdvertService advertManagerService;
 
     @PostMapping("/all")
-    public ResultBean<PageInfo<Advert>> getAll( Integer pageNo,Integer pageSize) {
-        return new ResultBean<PageInfo<Advert>>(advertManagerService.getAll(pageNo,pageSize));
+    public ResultBean<PageResult<Advert>> getAll(@RequestBody PageObject pageObject) {
+        return new ResultBean<PageResult<Advert>>(advertManagerService.getAll(pageObject.getPageNo(), pageObject.getPageSize()));
     }
 
     /**
@@ -47,13 +51,28 @@ public class AdvertController {
      * @return
      */
     @PostMapping("/add")
-    public ResultBean<Long> add(@RequestBody @Valid Advert favorite) {
-        return new ResultBean<Long>(advertManagerService.add(favorite));
+    public ResultBean<Long> add(@RequestBody @Valid AdvertForm advertForm) {
+        return new ResultBean<Long>(advertManagerService.add(advertForm));
     }
 
     @PostMapping("/delete")
     public ResultBean<Boolean> delete(@RequestParam long id) {
         return new ResultBean<Boolean>(advertManagerService.delete(id));
+    }
+
+    /**
+     * 上传图片功能
+     * @param file
+     * @return
+     */
+    @PostMapping("image")
+    public ResultBean<String> uploadImage(@RequestParam("file") MultipartFile file) throws IOException {
+        return new ResultBean<String>(this.advertManagerService.upload(file));
+    }
+
+    @PostMapping("/update")
+    public ResultBean<Long> update(@RequestBody @Valid Advert advert) {
+        return new ResultBean<Long>(advertManagerService.update(advert));
     }
 
 }

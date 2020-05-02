@@ -10,6 +10,8 @@ package cn.xiaowenjie.beans;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.math.BigInteger;
+
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 
@@ -23,5 +25,6 @@ public class School extends BaseEntity{
 //      schoolName  schoolPosition  phoneNum
     private String schoolName;
     private String schoolPosition;
-    private int phoneNum;
+    private BigInteger phoneNum;
+    private int sortNumber;
 }

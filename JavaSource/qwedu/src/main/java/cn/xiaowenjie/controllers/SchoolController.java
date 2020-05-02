@@ -2,21 +2,21 @@ package cn.xiaowenjie.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collection;
-
 import javax.validation.Valid;
 
+import cn.xiaowenjie.beans.PageObject;
 import cn.xiaowenjie.beans.School;
+import cn.xiaowenjie.boss.form.SchoolForm;
 import cn.xiaowenjie.common.beans.ResultBean;
 import cn.xiaowenjie.services.SchoolService;
 import io.swagger.annotations.Api;
+import next.framework.page.PageResult;
 
 /**
  * Created by Administrator on 2020/4/10.
@@ -34,9 +34,9 @@ public class SchoolController {
     @Autowired
     private SchoolService schoolService;
 
-    @GetMapping("/all")
-    public ResultBean<Collection<School>> getAll(@RequestParam int type) {
-        return new ResultBean<Collection<School>>(schoolService.getAll(type));
+    @PostMapping("/all")
+    public ResultBean<PageResult<School>> getAll(@RequestBody PageObject pageObject) {
+        return new ResultBean<PageResult<School>>(schoolService.getAll(pageObject.getPageNo(), pageObject.getPageSize()));
     }
 
     /**
@@ -48,13 +48,18 @@ public class SchoolController {
      * @return
      */
     @PostMapping("/add")
-    public ResultBean<Long> add(@RequestBody @Valid School favorite) {
+    public ResultBean<Long> add(@RequestBody @Valid SchoolForm favorite) {
         return new ResultBean<Long>(schoolService.add(favorite));
     }
 
     @PostMapping("/delete")
     public ResultBean<Boolean> delete(@RequestParam long id) {
         return new ResultBean<Boolean>(schoolService.delete(id));
+    }
+
+    @PostMapping("/update")
+    public ResultBean<Long> update(@RequestBody @Valid School school) {
+        return new ResultBean<Long>(schoolService.update(school));
     }
 
 }
