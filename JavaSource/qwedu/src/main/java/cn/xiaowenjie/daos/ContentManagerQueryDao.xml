@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.xiaowenjie.daos.ContentManagerQueryDao">
+
+    <!--auto generated Code-->
+    <sql id="all_column">
+        `id`,
+        `create_time`,
+        `update_time`,
+        `areatext`,
+        `grade`,
+        `author`,
+        `categoryname`,
+         `contentname`,
+          `contentdescription`,
+           `isrecommend`,
+            `status`,
+             `tag`,
+              `weight`,
+               `picurl`
+    </sql>
+
+    <resultMap id="AllColumnMap4Model" type="cn.xiaowenjie.beans.Contentmanager">
+        <result column="id" property="id"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="author" property="author"/>
+        <result column="areatext" property="areatext"/>
+        <result column="grade" property="grade"/>
+        <result column="categoryname" property="categoryname"/>
+        <result column="contentname" property="contentname"/>
+        <result column="contentdescription" property="contentdescription"/>
+        <result column="isrecommend" property="isrecommend"/>
+        <result column="status" property="status"/>
+        <result column="picurl" property="picurl"/>
+        <result column="weight" property="weight"/>
+        <result column="grade" property="grade"/>
+    </resultMap>
+
+<!--    <if test="query.id!=null and query.id!=''">AND 'id' = #{query.id}</if>-->
+  <select id="selectByQuery" resultMap="AllColumnMap4Model">
+        SELECT
+        <include refid="all_column"/>
+        FROM qw_contentmanager
+        <where>
+            <if test="query.categoryname!=null and query.categoryname!=''">AND `categoryname` = #{query.categoryname}</if>
+            <if test="query.grade!=null and query.grade!=''">AND `grade` = #{query.grade}</if>
+        </where>
+  </select>
+</mapper>

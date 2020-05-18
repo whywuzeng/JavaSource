@@ -12,6 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 
@@ -24,12 +25,17 @@ import lombok.EqualsAndHashCode;
 public class Contentmanager extends BaseEntity{
 //      categoryid  contentname  contentdescription  tag     isrecommend  weight  date    status  author
     private Long categoryid;
+    private String categoryname;
+    private String grade;
     private String contentname;
+    @Column(nullable = false, columnDefinition = "varchar(1000)")
+    private String areatext;
     private String contentdescription;
     private String tag;
     private int isrecommend;
     private int weight;
     private Date date;
+    private String picurl;
     private String status;
     private String author;
 }

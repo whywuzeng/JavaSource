@@ -17,9 +17,9 @@ import cn.xiaowenjie.beans.Advert;
 import cn.xiaowenjie.beans.PageObject;
 import cn.xiaowenjie.boss.form.AdvertForm;
 import cn.xiaowenjie.common.beans.ResultBean;
+import cn.xiaowenjie.response.PageResult;
 import cn.xiaowenjie.services.AdvertService;
 import io.swagger.annotations.Api;
-import next.framework.page.PageResult;
 
 /**
  * Created by Administrator on 2020/4/10.
@@ -39,7 +39,7 @@ public class AdvertController {
 
     @PostMapping("/all")
     public ResultBean<PageResult<Advert>> getAll(@RequestBody PageObject pageObject) {
-        return new ResultBean<PageResult<Advert>>(advertManagerService.getAll(pageObject.getPageNo(), pageObject.getPageSize()));
+        return new ResultBean<PageResult<Advert>>(advertManagerService.getAll(pageObject.getPageNo(), pageObject.getPageSize(),pageObject.getSchoolId()));
     }
 
     /**

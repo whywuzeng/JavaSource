@@ -2,7 +2,8 @@ package cn.xiaowenjie.helper;
 
 import com.github.pagehelper.PageInfo;
 
-import next.framework.page.PageResult;
+import cn.xiaowenjie.response.PageResult;
+
 
 /**
  * Description: 分页对象转换

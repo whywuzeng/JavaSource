@@ -25,8 +25,8 @@ import cn.xiaowenjie.beans.Advert;
 import cn.xiaowenjie.boss.form.AdvertForm;
 import cn.xiaowenjie.daos.AdvertDao;
 import cn.xiaowenjie.helper.PageTransformer;
+import cn.xiaowenjie.response.PageResult;
 import lombok.extern.slf4j.Slf4j;
-import next.framework.page.PageResult;
 
 import static cn.xiaowenjie.common.utils.CheckUtil.check;
 import static cn.xiaowenjie.common.utils.CheckUtil.notEmpty;
@@ -47,12 +47,17 @@ public class AdvertService {
     @Autowired
     AdvertDao dao;
 
-    public PageResult<Advert> getAll(int pageNo, int pageSize) {
+    public PageResult<Advert> getAll( int pageNo, int pageSize,int schoolId) {
         // 校验通过后打印重要的日志
         log.info("getAll start ...");
         Page<Advert> page = PageHelper.startPage(pageNo, pageSize);
-
-        List<Advert> data = (List<Advert>) dao.findAll();
+        List<Advert> data = null;
+        if (schoolId<=0)
+        {
+            data = (List<Advert>) dao.findAll();
+        }else {
+            data = dao.findByShoolId(schoolId);
+        }
         log.info("getAll end, data size:" + data.size());
         PageInfo<Advert> pageInfo = new PageInfo<>(data);
         return PageTransformer.transform(pageInfo);
@@ -80,7 +85,7 @@ public class AdvertService {
 //        AdvertManager favoriteNew = dao.findByUserIdAndObjTypeAndObjId(userId, AdvertManager.getObjType(), AdvertManager.getObjId());
         Advert favoriteNew = null;
         Advert advert = new Advert();
-        advert.setAdId("5");
+        advert.setAdId(AdvertManager.getAdId());
         advert.setTitle(AdvertManager.getTitle());
         advert.setPosition(AdvertManager.getPosition());
         advert.setStatus(AdvertManager.getStatus());
@@ -160,8 +165,11 @@ public class AdvertService {
             return null;
         }
 
-        String property = "D:/pics/";
+        // String property = "D:/pics/";
+        String property = "/usr/dev/static";
+        log.info("property 文件为"+property);
         File dir = new File(property);
+        log.info("dir 是否存在:"+dir.exists());
         if (!dir.exists()) {
             dir.mkdirs();
         }
@@ -206,7 +214,6 @@ public class AdvertService {
         check(advert != null, "advertManager.error", advert.toString());
         notEmpty(advert.getPlatform(),"advertManagerForm paltform not null or empty",advert.getPlatform());
         notEmpty(advert.getPosition(),"advertManagerForm position not null or empty",advert.getPosition());
-        advert.setAdId("5");
         Advert save = dao.save(advert);
         save.setUpdateTime(new Date());
         return save.getId();

@@ -1,5 +1,8 @@
 package cn.xiaowenjie;
 
+import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +19,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication(scanBasePackages="cn.xiaowenjie")
 @ServletComponentScan
 @EnableSwagger2
+@MapperScan(basePackages = "cn.xiaowenjie.daos")
 public class SpringbootCodeTemplateApplication {
+
+		private	Logger logger = LoggerFactory.getLogger(SpringbootCodeTemplateApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootCodeTemplateApplication.class, args);
@@ -41,6 +47,7 @@ public class SpringbootCodeTemplateApplication {
 	MultipartConfigElement multipartConfigElement() {
 		MultipartConfigFactory factory = new MultipartConfigFactory();
 		factory.setLocation(uploadFolder);
+		logger.info("uploadFolder"+uploadFolder);
 		return factory.createMultipartConfig();
 	}
 

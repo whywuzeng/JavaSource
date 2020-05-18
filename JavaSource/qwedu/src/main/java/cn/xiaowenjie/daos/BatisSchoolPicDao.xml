@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.xiaowenjie.daos.BatisSchoolPicDao">
+
+    <!--auto generated Code-->
+    <sql id="all_column">
+        `id`,
+        `school_id`,
+        `pic_url`,
+        `create_time`,
+        `update_time`
+    </sql>
+
+    <resultMap id="AllColumnMap4Model" type="cn.xiaowenjie.beans.Schoolpic">
+        <result column="id" property="id"/>
+        <result column="school_id" property="schoolId"/>
+        <result column="pic_url" property="picUrl"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+<!--    <if test="query.id!=null and query.id!=''">AND 'id' = #{query.id}</if>-->
+  <select id="selectByQuery" resultMap="AllColumnMap4Model">
+        SELECT
+        <include refid="all_column"/>
+        FROM qw_schoolpic
+        <where>
+            <if test="query.schoolId!=null and query.schoolId!=''">AND `school_id` = #{query.schoolId}</if>
+        </where>
+  </select>
+</mapper>

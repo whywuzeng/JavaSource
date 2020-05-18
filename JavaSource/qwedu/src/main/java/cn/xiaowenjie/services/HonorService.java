@@ -1,14 +1,21 @@
 package cn.xiaowenjie.services;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import cn.xiaowenjie.beans.Honor;
-import cn.xiaowenjie.daos.ContentManagerDao;
+import cn.xiaowenjie.boss.form.HonorForm;
 import cn.xiaowenjie.daos.HonorDao;
+import cn.xiaowenjie.helper.PageTransformer;
+import cn.xiaowenjie.response.PageResult;
 import lombok.extern.slf4j.Slf4j;
 
 import static cn.xiaowenjie.common.utils.CheckUtil.check;
@@ -25,16 +32,19 @@ public class HonorService {
 
     @Autowired
     HonorDao dao;
+    //Honor
 
-    public Collection<Honor> getAll(int type) {
+    public PageResult<Honor> getAll(int schoolId, int pageNo, int pageSize) {
         // 校验通过后打印重要的日志
         log.info("getAll start ...");
+        Page<Honor> page = PageHelper.startPage(Integer.valueOf(pageNo), Integer.valueOf(pageSize));
 
-        List<Honor> data = dao.findAllById((long) type);
-
+        List<Honor> data = (List<Honor>) dao.findAll();
         log.info("getAll end, data size:" + data.size());
 
-        return data;
+        PageInfo<Honor> pageInfo = new PageInfo<>(data);
+
+        return PageTransformer.transform(pageInfo);
     }
 
     /**
@@ -43,31 +53,35 @@ public class HonorService {
      * @param Honor
      * @return
      */
-    public long add(Honor Honor) {
+    public long add(HonorForm honorForm) {
         // 参数校验
-        notNull(Honor);
+        notNull(honorForm);
 
-//        check(Honor.getObjType() > 0);
-//        check(Honor.getObjId() > 0L);
+//        check(School.getObjType() > 0);
+//        check(School.getObjId() > 0L);
 
         // 校验通过后打印重要的日志
-        log.info("add Honor:" + Honor);
+        log.info("add honorForm:" + honorForm);
 
 //        long userId = UserUtil.getUserId();
+        Honor manager = new Honor();
+        manager.setId(0);
+        manager.setPic(honorForm.getPicUrl());
+        manager.setCreateTime(new Date());
 
         // 校验重复
-//        Honor favoriteNew = dao.findByUserIdAndObjTypeAndObjId(userId, Honor.getObjType(), Honor.getObjId());
+//        School favoriteNew = dao.findByUserIdAndObjTypeAndObjId(userId, School.getObjType(), School.getObjId());
         Honor favoriteNew = null;
 
         // 如果没有记录，就新增
         if (favoriteNew == null) {
             // 设置用户id
-//            Honor.setUserId(userId);
+//            School.setUserId(userId);
 
-            favoriteNew = dao.save(Honor);
+            favoriteNew = dao.save(manager);
 
             // 修改操作需要打印操作结果
-            log.info("add Honor success, id:" + favoriteNew.getId());
+            log.info("add School success, id:" + favoriteNew.getId());
         }
 
         return favoriteNew.getId();
@@ -109,6 +123,34 @@ public class HonorService {
     private boolean canDelete(Honor Honor) {
 //        return UserUtil.getUserId() == Honor.getUserId() || UserUtil.isAdmin();
         return true;
+    }
+
+
+    public Long update(Honor manager) {
+        check(manager != null, "SchoolPic.error", manager.toString());
+        Honor save = dao.save(manager);
+        save.setUpdateTime(new Date());
+        return save.getId();
+    }
+
+    public List<Long> addList(List<HonorForm> honorForms) {
+        List<Honor> list = new ArrayList<>();
+        // 参数校验
+        for (HonorForm schoolpic : honorForms) {
+            Honor schoolpic1 = new Honor();
+            schoolpic1.setId(0);
+            schoolpic1.setCreateTime(new Date());
+            schoolpic1.setPic(schoolpic.getPicUrl());
+            list.add(schoolpic1);
+        }
+
+        List<Long> longs =new ArrayList<>();
+        Iterable<Honor> save = dao.save(list);
+        for (Honor schoolpic : save) {
+            longs.add(schoolpic.getId());
+        }
+
+        return longs;
     }
 
 }

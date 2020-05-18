@@ -14,9 +14,9 @@ import cn.xiaowenjie.beans.PageObject;
 import cn.xiaowenjie.beans.Trackmanager;
 import cn.xiaowenjie.boss.form.TrackmanagerForm;
 import cn.xiaowenjie.common.beans.ResultBean;
+import cn.xiaowenjie.response.PageResult;
 import cn.xiaowenjie.services.TrackManagerService;
 import io.swagger.annotations.Api;
-import next.framework.page.PageResult;
 
 /**
  * Created by Administrator on 2020/4/10.

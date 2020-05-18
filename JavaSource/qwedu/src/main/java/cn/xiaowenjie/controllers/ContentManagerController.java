@@ -2,19 +2,19 @@ package cn.xiaowenjie.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collection;
-
 import javax.validation.Valid;
 
 import cn.xiaowenjie.beans.Contentmanager;
+import cn.xiaowenjie.beans.PageObjectContent;
+import cn.xiaowenjie.boss.form.ContentmanagerForm;
 import cn.xiaowenjie.common.beans.ResultBean;
+import cn.xiaowenjie.response.PageResult;
 import cn.xiaowenjie.services.ContentManagerService;
 import io.swagger.annotations.Api;
 
@@ -34,9 +34,9 @@ public class ContentManagerController {
     @Autowired
     private ContentManagerService advertManagerService;
 
-    @GetMapping("/all")
-    public ResultBean<Collection<Contentmanager>> getAll(@RequestParam int type) {
-        return new ResultBean<Collection<Contentmanager>>(advertManagerService.getAll(type));
+    @PostMapping("/all")
+    public ResultBean<PageResult<Contentmanager>> getAll(@RequestBody PageObjectContent pageObject) {
+        return new ResultBean<PageResult<Contentmanager>>(advertManagerService.getAll(pageObject));
     }
 
     /**
@@ -48,13 +48,18 @@ public class ContentManagerController {
      * @return
      */
     @PostMapping("/add")
-    public ResultBean<Long> add(@RequestBody @Valid Contentmanager favorite) {
-        return new ResultBean<Long>(advertManagerService.add(favorite));
+    public ResultBean<Long> add(@RequestBody @Valid ContentmanagerForm advertForm) {
+        return new ResultBean<Long>(advertManagerService.add(advertForm));
     }
 
     @PostMapping("/delete")
     public ResultBean<Boolean> delete(@RequestParam long id) {
         return new ResultBean<Boolean>(advertManagerService.delete(id));
+    }
+
+    @PostMapping("/update")
+    public ResultBean<Long> update(@RequestBody @Valid Contentmanager advert) {
+        return new ResultBean<Long>(advertManagerService.update(advert));
     }
 
 }

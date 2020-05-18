@@ -14,9 +14,9 @@ import cn.xiaowenjie.beans.AdvertManager;
 import cn.xiaowenjie.beans.PageObject;
 import cn.xiaowenjie.boss.form.AdvertManagerForm;
 import cn.xiaowenjie.common.beans.ResultBean;
+import cn.xiaowenjie.response.PageResult;
 import cn.xiaowenjie.services.AdvertManagerService;
 import io.swagger.annotations.Api;
-import next.framework.page.PageResult;
 
 /**
  * Created by Administrator on 2020/4/10.
@@ -53,7 +53,7 @@ public class AdvertManagerController {
     }
 
     @PostMapping("/delete")
-    public ResultBean<Boolean> delete(@RequestParam long id) {
+    public ResultBean<Boolean> delete(@RequestParam int id) {
         return new ResultBean<Boolean>(advertManagerService.delete(id));
     }
 

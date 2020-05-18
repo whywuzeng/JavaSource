@@ -1,6 +1,8 @@
 package cn.xiaowenjie.daos;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
@@ -14,6 +16,9 @@ import cn.xiaowenjie.beans.Advert;
 public interface AdvertDao extends PagingAndSortingRepository<Advert, Long> {
 
     List<Advert> findAllById(Long id);
+
+    @Query("from qw_advert where ad_id=:shoolid")
+    List<Advert> findByShoolId(@Param("shoolid") int shoolid);
 
 //    List<AdvertManager> findAllByObjType(int type);
 //

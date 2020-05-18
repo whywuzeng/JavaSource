@@ -24,4 +24,5 @@ public class Teacher extends BaseEntity{
     private String teachername;
     private String description;
     private String photo;
+    private int sortnumber;
 }

@@ -1,5 +1,7 @@
 package cn.xiaowenjie.beans;
 
+import lombok.Data;
+
 /**
  * Created by Administrator on 2020/4/29.
  * <p>
@@ -7,10 +9,12 @@ package cn.xiaowenjie.beans;
  * <p>
  * cn.xiaowenjie.beans
  */
-
+@Data
 public class PageObject {
     private int pageNo;
     private int pageSize;
+
+    private int schoolId;
 
     public int getPageNo() {
         return pageNo;

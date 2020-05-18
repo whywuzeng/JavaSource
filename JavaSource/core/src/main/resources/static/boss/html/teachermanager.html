@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet"  href="https://static.talkyun.com/frame/layui/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="https://static.talkyun.com/frame/layui/style/skin/default.css" media="all">
+    <link rel="stylesheet" href="../css/style.css" media="all">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>师资力量管理</legend>
+</fieldset>
+
+<table class="layui-hide" id="test" lay-filter="testevent"></table>
+
+<!--    模板scripty-->
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<script type="text/html" id="toolbarDemo">
+    <div class="layui-btn-container">
+        <button class="layui-btn layui-btn-sm" lay-event="addItem">添加一行</button>
+    </div>
+</script>
+
+<!--    弹出窗的模板-->
+<script type="text/html" id="argSchemaTemplate">
+            <form class="layui-form" action="">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>新建/添加老师</legend>
+                </fieldset>
+
+                <div class="layui-input-block" hidden>
+                    <input class="layui-input" type="text" hidden name="id"  value="{{d.id}}" autocomplete="off" placeholder="请输入id" />
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">老师名字</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" lay-verify="required"  name="teachername"  value="{{d.teachername}}" autocomplete="off" placeholder="请输入名字" />
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">老师介绍</label>
+                    <div class="layui-input-block">
+                            <input class="layui-input" type="text" lay-verify="required"  name="description"  value="{{d.description}}" autocomplete="off" placeholder="请输入详情" />
+                    </div>
+                </div>
+
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn" id="uploadId">上传图片</button>
+                    <div class="layui-upload-list">
+                        <img class="layui-upload-img" id="uploadImgId" src="{{d.photo}}">
+                        <p id="demoText"></p>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">排序</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text"  name="sortnumber"  value="{{d.sortnumber}}" autocomplete="off" placeholder="请输入排序" />
+                    </div>
+                </div>
+
+                <div class="layui-form-item" hidden>
+                    <label class="layui-form-label">photo链接</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text"  id="picUrl"  name="photo"  value="{{d.photo}}" autocomplete="off" placeholder="请输入访问链接" />
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="submitadvertmanager">提交</button>
+                </div>
+            </form>
+
+</script>
+<script type="text/javascript">
+    layuiModules=['table','form', 'laydate','admin','upload'];
+
+    function mounted() {
+        var form = layui.form
+            ,layer = layui.layer
+            ,laydate = layui.laydate;
+        var table = layui.table;
+        var $ = layui.$;
+        var api =  layui.api;
+        var admin = layui.admin;
+        var upload = layui.upload;
+
+        var where = {
+            pageNo: 1,
+            pageSize: 10
+        };
+
+        table.render({
+            elem: '#test'
+            ,url:api.teachermanager.all
+            ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+            ,toolbar: '#toolbarDemo' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
+            ,page:false
+            ,contentType:"application/json"
+            ,parseData:function(res){
+                // adId: "1"
+                // createTime: 1586857250000
+                // endDate: 1586857117000
+                // id: 3
+                // platform: "pc"
+                // position: "首页"
+                // startDate: 1586857117000
+                // status: "上线"
+                // statusType: 0
+                // title: "今日头条"
+                // updateTime: 1586857250000
+                // url: "http://www.baidu.com"
+
+                // 调整符合表单的数据格式
+                // $(res.result).each(function () {
+                //     var oneDate = this;
+                //     for(var p in oneDate){
+                //         if (p === 'row') {
+                //             for (var attr in oneDate[p]) {
+                //                 oneDate[attr] = oneDate[p][attr];
+                //             }
+                //         }
+                //     }
+                // });
+                return {
+                    "code":0,
+                    "msg":"",
+                    "count":res.data.totalSize,
+                    "data":res.data.result
+                }
+            }
+            ,done: function (res, curr, count) {
+                loadPage(curr,count);
+            }
+            ,cols: [[
+                {type: 'checkbox', fixed: 'left'}
+                ,{field:'teachername', width:120, title: '老师名字'}
+                ,{field: 'description', title: '老师介绍', width:120}
+                ,{field:'photo', width:120, title: '老师照片'}
+                ,{field: 'sortnumber', title: '排序', width:120}
+                ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
+            ]]
+            , where: where
+
+        });
+
+        form.render();
+
+        // 后台接口分页参数不按Layui文档，自定义分页
+        var repeat = [0,0];
+        function loadPage(curr,count){
+            if(repeat[0] == curr && repeat[1] == count){
+                return false;
+            }
+            repeat[0] = curr;
+            repeat[1] = count;
+            layui.laypage.render({
+                elem: 'paging',
+                layout: ['count', 'prev', 'page', 'next', 'limit', 'skip'],
+                count: count,  //总数
+                limit: 10,   //每页显示的条数
+                skip: 1,
+                limits: [10, 20, 30, 40],
+                jump: function (obj) {
+                    where.pageNo = obj.curr;
+                    where.pageSize = obj.limit;
+                    layui.table.reload('test', {where: where});
+                    return false;
+                }
+            });
+        }
+
+        //监听提交
+        form.on('submit(submitadvertmanager)', function(data){
+
+            if (data.field.id&&data.field.id!='undefined'&&data.field.id!='')
+            {
+                updateItem(data);
+            }else {
+                addItem(data);
+            }
+
+            return false;
+        });
+
+        //监听头工具栏事件
+        table.on('toolbar(testevent)', function(obj){
+            var checkStatus = table.checkStatus(obj.config.id)
+                ,data = checkStatus.data; //获取选中的数据
+            switch(obj.event){
+                case 'addItem':
+                    layer.msg('添加');
+                    openlayer({description: "",
+                        photo: "",
+                        sortnumber: "",
+                        teachername: ""});
+                    break;
+            };
+        });
+
+        //监听行工具事件
+        table.on('tool(testevent)', function(obj){ //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+            var data = obj.data //获得当前行数据
+                ,layEvent = obj.event; //获得 lay-event 对应的值
+            if(layEvent === 'detail'){
+                layer.msg('查看操作');
+            } else if(layEvent === 'del'){
+                layer.confirm('真的删除行么', function(index){
+                    obj.del(); //删除对应行（tr）的DOM结构
+                    layer.close(index);
+                    //向服务端发送删除指令
+                });
+            } else if(layEvent === 'edit'){
+                layer.msg('编辑操作');
+                openlayer(data)
+            }
+        });
+
+        //新增和编辑同一个  试一试
+        function addItem(data) {
+            admin.req({
+                url: api.teachermanager.add,
+                data: data.field,
+                async: false,
+                success: function (res) {
+                    // layui.util.renderTplView({tplId: 'sceneTemplate', tarId: 'sceneCodeDiv', data: res});
+                    // layui.form.render('select');
+                    layer.alert(JSON.stringify(res), {
+                        title: '结果'
+                    })
+                }
+            });
+        }
+
+        function updateItem(data) {
+            admin.req({
+                url: api.teachermanager.update,
+                data: data.field,
+                async: false,
+                success: function (res) {
+                    // layui.util.renderTplView({tplId: 'sceneTemplate', tarId: 'sceneCodeDiv', data: res});
+                    // layui.form.render('select');
+                    layer.alert(JSON.stringify(res), {
+                        title: '结果'
+                    })
+                }
+            });
+        }
+
+        function openlayer(data) {
+            var templet = $('#argSchemaTemplate').html();
+
+            layui.laytpl(templet).render(data, function (html) {
+                //layer 弹出窗
+                //在这里面输入任何合法的js语句
+                layer.open({
+                    type: 1 //Page层类型
+                    ,area: ['50%', '70%']
+                    ,title: '添加'
+                    ,maxmin: false //允许全屏最小化
+                    ,anim: -1 //0-6的动画形式，-1不开启
+                    ,content: html,
+                    success: function (layero, index) {
+
+                        //普通图片上传
+                        var uploadInst = upload.render({
+                            elem: '#uploadId'
+                            ,url: api.advertDetail.upload //改成您自己的上传接口
+                            ,before: function(obj){
+                                //预读本地文件示例，不支持ie8
+                                obj.preview(function(index, file, result){
+                                    $('#uploadImgId').attr('src', result); //图片链接（base64）
+                                });
+                            }
+                            ,done: function(res){
+                                //如果上传失败
+                                if(res.code > 0){
+                                    return layer.msg('上传失败');
+                                }
+                                //上传成功
+                                $('#picUrl').val(res.data);
+                            }
+                            ,error: function(){
+                                //演示失败状态，并实现重传
+                                var demoText = $('#demoText');
+                                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+                                demoText.find('.demo-reload').on('click', function(){
+                                    uploadInst.upload();
+                                });
+                            }
+                        });
+
+                        form.render();
+                    }
+                });
+            });
+        }
+    };
+</script>
+</body>
+</html>

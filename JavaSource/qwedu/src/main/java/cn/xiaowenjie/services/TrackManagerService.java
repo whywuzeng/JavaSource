@@ -14,8 +14,8 @@ import cn.xiaowenjie.beans.Trackmanager;
 import cn.xiaowenjie.boss.form.TrackmanagerForm;
 import cn.xiaowenjie.daos.TrackManagerDao;
 import cn.xiaowenjie.helper.PageTransformer;
+import cn.xiaowenjie.response.PageResult;
 import lombok.extern.slf4j.Slf4j;
-import next.framework.page.PageResult;
 
 import static cn.xiaowenjie.common.utils.CheckUtil.check;
 import static cn.xiaowenjie.common.utils.CheckUtil.notEmpty;
